@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'raindrop'
+import ExampleComponent from 'global-winery'
 
 export default class App extends Component {
   render () {

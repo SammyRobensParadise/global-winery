@@ -1,6 +1,6 @@
 {
-  "short_name": "raindrop",
-  "name": "raindrop",
+  "short_name": "global-winery",
+  "name": "global-winery",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

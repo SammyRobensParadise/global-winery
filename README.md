@@ -1,13 +1,13 @@
-# raindrop
+# global-winery
 
-> Raindrop for grape, a global frontend
+> global-winery for grape, a global frontend
 
-[![NPM](https://img.shields.io/npm/v/raindrop.svg)](https://www.npmjs.com/package/raindrop) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/global-winery.svg)](https://www.npmjs.com/package/global-winery) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save raindrop
+npm install --save global-winery
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save raindrop
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'raindrop'
+import MyComponent from 'global-winery'
 
 class Example extends Component {
   render () {

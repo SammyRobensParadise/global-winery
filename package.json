@@ -1,10 +1,10 @@
 {
-  "name": "raindrop",
+  "name": "global-winery",
   "version": "1.0.0",
-  "description": "Raindrop for grape, a global frontend",
+  "description": "global-winery for grape, a global frontend",
   "author": "SammyRobensParadise",
   "license": "MIT",
-  "repository": "SammyRobensParadise/raindrop",
+  "repository": "SammyRobensParadise/global-winery",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
