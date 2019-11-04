@@ -20,7 +20,7 @@ import MyComponent from 'global-winery'
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <MyComponent props={'props'} />
     )
   }
 }
@@ -29,3 +29,5 @@ class Example extends Component {
 ## License
 
 MIT © [SammyRobensParadise](https://github.com/SammyRobensParadise)
+[webiste](https://sammyrp.com)
+[portfolio](https://sammy.world)

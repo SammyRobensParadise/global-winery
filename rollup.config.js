@@ -10,11 +10,13 @@ import pkg from './package.json'
 
 export default {
   input: 'src/index.js',
+  external: ['styled-components'],
   output: [
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
+      globals: { 'styled-components': 'styled' }
     },
     {
       file: pkg.module,
@@ -31,9 +33,14 @@ export default {
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      plugins: ['external-helpers']
     }),
     resolve(),
-    commonjs()
+    commonjs({
+      include: 'node_modules/**',
+      namedExports: {
+        'node_modules/react-is/index.js': ['isValidElementType', 'isElement', 'ForwardRef']
+      }
+    })
   ]
 }

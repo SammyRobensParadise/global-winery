@@ -1,22 +1,10 @@
-import React, { Component } from 'react'
+import Button from './global-buttons/buttons/Button'
+import MultiButton from './global-buttons/buttons/MultiButton'
+import Chevron from './global-buttons/chevrons/Chevron'
+import SingleInput from './global-text-inputs/text-inputs/SingleInput'
+import FixedInput from './global-text-inputs/text-inputs/FixedInput'
+import CheckBox from './checkboxes/Checkbox'
+import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
-
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export { Button, MultiButton, Chevron, SingleInput, FixedInput, CheckBox, React, styled, PropTypes }
