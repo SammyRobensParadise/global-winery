@@ -6,7 +6,9 @@ import {
   SingleInput,
   FixedInput,
   CheckBox,
-  styled
+  styled,
+  Icon,
+  CodeBlock
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -243,12 +245,15 @@ const CheckBoxesSection = () => {
 }
 
 const IconSection = () => {
+  const type = <CodeBlock color={'#fff'}/>
   return (
     <Container>
       <Jumbotron>
         <SectionTitle>Icons</SectionTitle>
       </Jumbotron>
-      <Content></Content>
+      <Content>
+        <Icon type={type} event={() => alert("codeblock clicked!")} color={'grey'} circle ></Icon>
+      </Content>
     </Container>
   )
 }
