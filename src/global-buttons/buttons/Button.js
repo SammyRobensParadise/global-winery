@@ -43,7 +43,7 @@ const Button = ({ text, hover, invert, small, dropShadow, event }) => {
     event: PropTypes.func
   }
   return (
-    <div className={BUTTON_CLASSNAME}>
+    <div className={BUTTON_CLASSNAME} tabIndex='1'>
       <ButttonEl
         dropShadow={dropShadow}
         small={small}
