@@ -11,6 +11,8 @@
 
 ![minified_size](https://img.shields.io/bundlephobia/min/global-winery)
 
+[sammyrp.com/global-winery](https://sammyrp.com/global-winery)
+
 ## Install
 
 ```bash
