@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 const IconWrapper = styled.div`
   cursor: pointer;
   user-select: none;
+  line-height: 1;
 `
 const IconStyles = styled.div`
   width: 38px;
@@ -15,6 +16,7 @@ const IconStyles = styled.div`
 `
 const IconInner = styled.div`
   color: #fff !important;
+  line-height: 1;
 `
 const ICON_CLASSNAME = 'global-icons'
 const Icon = ({ type, hoverable, circle, square, color, event }) => {

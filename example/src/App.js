@@ -8,7 +8,11 @@ import {
   CheckBox,
   styled,
   Icon,
-  CodeBlock
+  CodeBlock,
+  RefreshArrow,
+  BackArrow,
+  ForwardArrow,
+  ExportUp
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -246,13 +250,34 @@ const CheckBoxesSection = () => {
 
 const IconSection = () => {
   const type = <CodeBlock color={'#fff'}/>
+  const typeTwo = <RefreshArrow color={'#00000'} />
+  const typeThree = <BackArrow color={'#00000'} />
+  const typeFour = <ForwardArrow color={'#00000'} />
+  const typeFive = <ExportUp color={'#00000'} />
   return (
     <Container>
       <Jumbotron>
         <SectionTitle>Icons</SectionTitle>
       </Jumbotron>
       <Content>
-        <Icon type={type} event={() => alert("codeblock clicked!")} color={'grey'} circle ></Icon>
+        <Code>CodeBlock</Code>
+        <Icon type={type} event={() => alert("codeblock clicked!")} color={'#cacaca'} circle ></Icon>
+      </Content>
+      <Content>
+      <Code>RefreshArrow</Code>
+        <Icon type={typeTwo} event={() => alert("refresh arrow clicked!")} ></Icon>
+      </Content>
+      <Content>
+      <Code>BackArrow</Code>
+        <Icon type={typeThree} event={() => alert("back arrow clicked!")} ></Icon>
+      </Content>
+      <Content>
+      <Code>ForwardArrow</Code>
+        <Icon type={typeFour} event={() => alert("forward arrow clicked!")} ></Icon>
+      </Content>
+      <Content>
+      <Code>ExportUp</Code>
+        <Icon type={typeFive} event={() => alert("Export Up clicked!")} ></Icon>
       </Content>
     </Container>
   )

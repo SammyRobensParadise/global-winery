@@ -72,7 +72,7 @@ const Chevron = ({ direction, color }) => {
     color: PropTypes.string
   }
   return (
-    <div className={CLASSNAME}>
+    <div className={CLASSNAME} tabIndex='1'>
       <GetStyle direction={direction} color={color} />
     </div>
   )

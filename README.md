@@ -2,7 +2,14 @@
 
 > global-winery for grape, a global frontend
 
-[![NPM](https://img.shields.io/npm/v/global-winery.svg)](https://www.npmjs.com/package/global-winery) [![JavaScript Style Guide](https://img.shields.io/badge/Code%20Style-Prettier-orange)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/global-winery.svg)](https://www.npmjs.com/package/global-winery) \
+ [![JavaScript Style Guide](https://img.shields.io/badge/Code%20Style-Prettier-orange)](https://standardjs.com)
+
+![License](https://img.shields.io/npm/l/global-winery)
+
+![Issues](https://img.shields.io/github/issues/SammyRobensParadise/global-winery)
+
+![minified_size](https://img.shields.io/bundlephobia/min/global-winery)
 
 ## Install
 
@@ -30,24 +37,28 @@ class Example extends Component {
   }
 }
 ```
+
 ## Running Locally
 
 ```bash
 git clone https://github.com/SammyRobensParadise/global-winery.git
 ```
+
 ```bash
 cd raindrop && npm start
 ```
+
 ```bash
 cd raindrop/example && npm start
 ```
-## What is available: 
+
+## What is available:
 
 1. [Buttons](#buttons)
 2. [Chevrons](#chevrons)
 3. [TextInputs](#text_input)
 4. [Icons](#icons)
-<br>
+   <br>
 
 <a id="buttons">
 </a>
@@ -57,27 +68,28 @@ cd raindrop/example && npm start
 ## Button
 
 ```jsx
-  Button.propTypes = {
-    text: PropTypes.string,
-    hover: PropTypes.bool,
-    invert: PropTypes.bool,
-    small: PropTypes.bool,
-    dropShadow: PropTypes.bool,
-    event: PropTypes.func
-  }
+Button.propTypes = {
+  text: PropTypes.string,
+  hover: PropTypes.bool,
+  invert: PropTypes.bool,
+  small: PropTypes.bool,
+  dropShadow: PropTypes.bool,
+  event: PropTypes.func
+}
 ```
+
 ## MultiButton
 
 ```jsx
-  MultiButton.propTypes = {
-    textLeft: PropTypes.string,
-    textRight: PropTypes.string,
-    rightEvent: PropTypes.func,
-    leftEvent: PropTypes.func,
-    leftFocus: PropTypes.bool,
-    rightFocus: PropTypes.bool,
-    dropShadow: PropTypes.bool
-  }
+MultiButton.propTypes = {
+  textLeft: PropTypes.string,
+  textRight: PropTypes.string,
+  rightEvent: PropTypes.func,
+  leftEvent: PropTypes.func,
+  leftFocus: PropTypes.bool,
+  rightFocus: PropTypes.bool,
+  dropShadow: PropTypes.bool
+}
 ```
 
 <a id="chevrons">
@@ -88,12 +100,13 @@ cd raindrop/example && npm start
 ## Chevron
 
 ```jsx
-  Chevron.propTypes = {
-    direction: PropTypes.string,
-    color: PropTypes.string
-  }
+Chevron.propTypes = {
+  direction: PropTypes.string,
+  color: PropTypes.string
+}
 ```
-Directions:  \
+
+Directions: \
 UP, DOWN, LEFT, RIGHT
 
 <a id="text_input">
@@ -104,22 +117,24 @@ UP, DOWN, LEFT, RIGHT
 ## Fixed Input
 
 ```jsx
-  FixedInput.propTypes = {
-    type: PropTypes.string,
-    size: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number
-  }
+FixedInput.propTypes = {
+  type: PropTypes.string,
+  size: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number
+}
 ```
-## Single Input  
+
+## Single Input
 
 ```jsx
-  SingleInput.propTypes = {
-    type: PropTypes.string,
-    size: PropTypes.number,
-    scrollAndResize: PropTypes.bool
-  }
+SingleInput.propTypes = {
+  type: PropTypes.string,
+  size: PropTypes.number,
+  scrollAndResize: PropTypes.bool
+}
 ```
+
 <a id="icons">
 </a>
 
@@ -128,25 +143,58 @@ UP, DOWN, LEFT, RIGHT
 ## General Icons
 
 ```jsx
-  Icon.propTypes = {
-    type: PropTypes.element,
-    hoverable: PropTypes.bool,
-    circle: PropTypes.bool,
-    square: PropTypes.bool,
-    color: PropTypes.string,
-    event: PropTypes.func
-  }
+Icon.propTypes = {
+  type: PropTypes.element,
+  hoverable: PropTypes.bool,
+  circle: PropTypes.bool,
+  square: PropTypes.bool,
+  color: PropTypes.string,
+  event: PropTypes.func
+}
 ```
+
 ## Code Block
+
 ```jsx
-  CodeBlock.propTypes = {
+CodeBlock.propTypes = {
+  color: PropTypes.string
+}
+```
+
+## Refresh Arrow
+
+```jsx
+RefreshArrow.propTypes = {
+  color: PropTypes.string
+}
+```
+
+## Back Arrow
+
+```jsx
+  BackArrow.propTypes = {
     color: PropTypes.string
-  }
+```
+
+## Forward Arrow
+
+```jsx
+ForwardArrow.propTypes = {
+  color: PropTypes.string
+}
+```
+
+## Export and Share
+
+```jsx
+exportUp.propTypes = {
+  color: PropTypes.string
+}
 ```
 
 # More To Come... :)
-## Creator
 
+## Creator
 
 [Webiste](https://sammyrp.com) \
 [Portfolio](https://sammy.world)

@@ -6,7 +6,7 @@ const CodeBlock = ({ color }) => {
     color: PropTypes.string
   }
   return (
-    <svg width='28' height='41'>
+    <svg tabIndex='1' width='28' height='41'>
       <text
         data-name='code001 - E0C5'
         transform='translate(14 40)'
