@@ -49,7 +49,7 @@ const CheckBox = ({ checked, borderColor, event }) => {
   }
   return (
     <div className={CLASSNAME}>
-      <Box borderColor={borderColor} onClick={event}>
+      <Box borderColor={borderColor} onClick={event} onKeyDown={event} tabIndex='1'>
         <CheckMark checked={checked} />
       </Box>
     </div>

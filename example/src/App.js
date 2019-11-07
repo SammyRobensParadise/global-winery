@@ -12,7 +12,11 @@ import {
   RefreshArrow,
   BackArrow,
   ForwardArrow,
-  ExportUp
+  ExportUp,
+  MoreDots,
+  Star,
+  ExitIcon,
+  HomeIcon
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -39,6 +43,8 @@ const SectionGradient = styled.div`
   );
   margin-left: 0px;
   margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 `
 const SectionTitle = styled.h2`
   text-align: center;
@@ -70,29 +76,73 @@ const Code = styled.div`
 const Subsection = styled.p`
   text-align: center;
 `
-
+const Table = styled.div`
+  align-items: center;
+  width: 20%;
+  margin: 0 auto;
+  padding: 20px;
+`
+const OuterListEl = styled.ul`
+  display: inline-block;
+`
+const ListI = styled.li`
+  margin-top: 10px;
+`
 const App = () => (
   <Wrapper>
     <Jumbotron>
-      <Title>Raindrop | Design</Title>
+      <Title>global-winery | design</Title>
 
       <Subsection>
         Simple design components that, used together, build beauiful user
-        interfaces, built in React.js.
+        interfaces, built in React.js for Grape.
       </Subsection>
       <Subsection>
         Created with ❤️ by{' '}
         <a href='https://sammyrp.com'>Sammy Robens-Paradise</a> for Grape.
       </Subsection>
+      <Subsection>
+        Check out <a href='https://grape-promo.firebaseapp.com/'>Grape</a> 🍇
+      </Subsection>
     </Jumbotron>
-    <SectionGradient></SectionGradient>
-    <ButtonsSection></ButtonsSection>
-    <InputSection></InputSection>
-    <CheckBoxesSection></CheckBoxesSection>
-    <IconSection></IconSection>
+    <SectionGradient />
+    <TableOfContents />
+    <SectionGradient />
+    <ButtonsSection />
+    <SectionGradient />
+    <InputSection />
+    <SectionGradient />
+    <CheckBoxesSection />
+    <SectionGradient />
+    <IconSection />
+    <SectionGradient />
   </Wrapper>
 )
 
+const TableOfContents = () => {
+  return (
+    <div>
+      <Table>
+        <SectionTitle>Table of Contents</SectionTitle>
+        <OuterListEl>
+          <ListI>
+            <a href='#buttons_and_toggles'>Buttons and Toggles</a>
+          </ListI>
+          <ListI>
+            {' '}
+            <a href='#inputs_and_text_fields'>Inputs and Text Fields</a>
+          </ListI>
+          <ListI>
+            <a href='#check_boxes'>Check Boxes</a>
+          </ListI>
+          <ListI>
+            <a href='#icons'>Icons</a>
+          </ListI>
+        </OuterListEl>
+      </Table>
+    </div>
+  )
+}
 const ButtonsSection = () => {
   const [count, setCount] = useState(0)
   const [countTwo, setCountTwo] = useState(0)
@@ -100,7 +150,9 @@ const ButtonsSection = () => {
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle>Buttons and Toggles</SectionTitle>
+        <SectionTitle id='buttons_and_toggles'>
+          Buttons and Toggles
+        </SectionTitle>
       </Jumbotron>
       <Container>
         <Content>
@@ -200,7 +252,9 @@ const ButtonsSection = () => {
 const InputSection = () => (
   <Container>
     <Jumbotron>
-      <SectionTitle>Inputs and Text Fields</SectionTitle>
+      <SectionTitle id='inputs_and_text_fields'>
+        Inputs and Text Fields
+      </SectionTitle>
     </Jumbotron>
     <Content>
       <Code>
@@ -226,7 +280,7 @@ const CheckBoxesSection = () => {
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle>Inputs and Text Fields</SectionTitle>
+        <SectionTitle id='check_boxes'>Check Boxes</SectionTitle>
       </Jumbotron>
       <Content>
         <Code>CheckBox props: Checked, borderColor </Code>
@@ -249,35 +303,69 @@ const CheckBoxesSection = () => {
 }
 
 const IconSection = () => {
-  const type = <CodeBlock color={'#fff'}/>
+  const type = <CodeBlock color={'#fff'} />
   const typeTwo = <RefreshArrow color={'#00000'} />
   const typeThree = <BackArrow color={'#00000'} />
   const typeFour = <ForwardArrow color={'#00000'} />
   const typeFive = <ExportUp color={'#00000'} />
+  const typeSix = <MoreDots color={'#000000'} />
+  const typeSeven = <Star color={'#000000'} />
+  const typeEight = <ExitIcon color={'#000000'} />
+  const typeNine  = <HomeIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle>Icons</SectionTitle>
+        <SectionTitle id='icons'>Icons</SectionTitle>
       </Jumbotron>
       <Content>
         <Code>CodeBlock</Code>
-        <Icon type={type} event={() => alert("codeblock clicked!")} color={'#cacaca'} circle ></Icon>
+        <Icon
+          type={type}
+          event={() => alert('codeblock clicked!')}
+          color={'#cacaca'}
+          circle
+        ></Icon>
       </Content>
       <Content>
-      <Code>RefreshArrow</Code>
-        <Icon type={typeTwo} event={() => alert("refresh arrow clicked!")} ></Icon>
+        <Code>RefreshArrow</Code>
+        <Icon
+          type={typeTwo}
+          event={() => alert('refresh arrow clicked!')}
+        ></Icon>
       </Content>
       <Content>
-      <Code>BackArrow</Code>
-        <Icon type={typeThree} event={() => alert("back arrow clicked!")} ></Icon>
+        <Code>BackArrow</Code>
+        <Icon
+          type={typeThree}
+          event={() => alert('back arrow clicked!')}
+        ></Icon>
       </Content>
       <Content>
-      <Code>ForwardArrow</Code>
-        <Icon type={typeFour} event={() => alert("forward arrow clicked!")} ></Icon>
+        <Code>ForwardArrow</Code>
+        <Icon
+          type={typeFour}
+          event={() => alert('forward arrow clicked!')}
+        ></Icon>
       </Content>
       <Content>
-      <Code>ExportUp</Code>
-        <Icon type={typeFive} event={() => alert("Export Up clicked!")} ></Icon>
+        <Code>ExportUp</Code>
+        <Icon type={typeFive} event={() => alert('Export Up clicked!')}></Icon>
+      </Content>
+      <Content>
+        <Code>MoreDots</Code>
+        <Icon type={typeSix} event={() => alert('more dots clicked!')}></Icon>
+      </Content>
+      <Content>
+        <Code>Star</Code>
+        <Icon type={typeSeven} event={() => alert('star clicked!')}></Icon>
+      </Content>
+      <Content>
+        <Code>ExitIcon</Code>
+        <Icon type={typeEight} event={() => alert('exit icon clicked!')}></Icon>
+      </Content>
+      <Content>
+        <Code>HomeIcon</Code>
+        <Icon type={typeNine} event={() => alert('home icon clicked!')}></Icon>
       </Content>
     </Container>
   )
