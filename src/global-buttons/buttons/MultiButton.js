@@ -71,15 +71,15 @@ const MultiButton = ({
     dropShadow: PropTypes.bool
   }
   return (
-    <div className={BUTTON_CLASSNAME} tabIndex='1'>
+    <div className={BUTTON_CLASSNAME} >
       <ButttonEl dropShadow={dropShadow}>
         <ButtonLeftSide onClick={leftEvent} leftFocus={leftFocus}>
-          <ButtonText leftFocus={leftFocus} rightFocus={rightFocus} left>
+          <ButtonText tabIndex='1' leftFocus={leftFocus} rightFocus={rightFocus} left>
             {textLeft}
           </ButtonText>
         </ButtonLeftSide>
         <ButtonRightSide onClick={rightEvent} rightFocus={rightFocus}>
-          <ButtonText leftFocus={leftFocus} rightFocus={rightFocus} right>
+          <ButtonText tabIndex='1' leftFocus={leftFocus} rightFocus={rightFocus} right>
             {textRight}
           </ButtonText>
         </ButtonRightSide>

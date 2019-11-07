@@ -32,6 +32,7 @@ height: 58px;
 padding-top: 18px;
 
 `
+
 const BUTTON_CLASSNAME = 'button-wrapper'
 const Button = ({ text, hover, invert, small, dropShadow, event }) => {
   Button.propTypes = {
@@ -43,7 +44,7 @@ const Button = ({ text, hover, invert, small, dropShadow, event }) => {
     event: PropTypes.func
   }
   return (
-    <div className={BUTTON_CLASSNAME} tabIndex='1'>
+    <div className={BUTTON_CLASSNAME}>
       <ButttonEl
         dropShadow={dropShadow}
         small={small}
@@ -51,7 +52,7 @@ const Button = ({ text, hover, invert, small, dropShadow, event }) => {
         hover={hover}
         invert={invert}
       >
-        <ButtonText invert={invert} hover={hover}>
+        <ButtonText tabIndex='1' invert={invert} hover={hover}>
           {text}
         </ButtonText>
       </ButttonEl>

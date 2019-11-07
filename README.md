@@ -193,6 +193,34 @@ exportUp.propTypes = {
   color: PropTypes.string
 }
 ```
+## More Dots
+
+```jsx
+MoreDots.propTypes = {
+  color: PropTypes.string
+}
+```
+## Star
+
+```jsx
+Star.propTypes = {
+  color: PropTypes.string
+}
+```
+## Exit Icon
+
+```jsx
+ExitIcon.propTypes = {
+  color: PropTypes.string
+}
+```
+## Home Icon
+
+```jsx
+HomeIcon.propTypes = {
+  color: PropTypes.string
+}
+```
 
 # More To Come... :)
 

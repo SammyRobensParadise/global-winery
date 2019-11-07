@@ -49,19 +49,19 @@ const ChevWrapperDown = styled.div`
 const GetStyle = ({ direction, color }) => {
   switch (direction) {
     case up: {
-      return <ChevWrapperUp color={color} />
+      return <ChevWrapperUp tabIndex='1' color={color} />
     }
     case down: {
-      return <ChevWrapperDown color={color} />
+      return <ChevWrapperDown tabIndex='1' color={color} />
     }
     case left: {
-      return <ChevWrapperLeft color={color} />
+      return <ChevWrapperLeft tabIndex='1' color={color} />
     }
     case right: {
-      return <ChevWrapperRight color={color} />
+      return <ChevWrapperRight tabIndex='1' color={color} />
     }
     default: {
-      return <ChevWrapperRight color={color} />
+      return <ChevWrapperRight tabIndex='1' color={color} />
     }
   }
 }
@@ -72,7 +72,7 @@ const Chevron = ({ direction, color }) => {
     color: PropTypes.string
   }
   return (
-    <div className={CLASSNAME} tabIndex='1'>
+    <div className={CLASSNAME}>
       <GetStyle direction={direction} color={color} />
     </div>
   )

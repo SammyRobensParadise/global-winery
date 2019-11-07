@@ -10,6 +10,10 @@ import RefreshArrow from './Icons/Icon-Types/refreshArrow'
 import BackArrow from './Icons/Icon-Types/backArrow'
 import ForwardArrow from './Icons/Icon-Types/forwardArrow'
 import ExportUp from './Icons/Icon-Types/exportUp'
+import MoreDots from './Icons/Icon-Types/moreDots'
+import Star from './Icons/Icon-Types/star'
+import ExitIcon from './Icons/Icon-Types/exitIcon'
+import HomeIcon from './Icons/Icon-Types/homeIcon'
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -28,5 +32,9 @@ export {
   RefreshArrow,
   BackArrow,
   ForwardArrow,
-  ExportUp
+  ExportUp,
+  MoreDots,
+  Star,
+  ExitIcon,
+  HomeIcon
 }
