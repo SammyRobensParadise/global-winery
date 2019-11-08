@@ -221,6 +221,13 @@ HomeIcon.propTypes = {
   color: PropTypes.string
 }
 ```
+## Add Icon
+
+```jsx
+AddIcon.propTypes = {
+  color: PropTypes.string
+}
+```
 
 # More To Come... :)
 

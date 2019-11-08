@@ -14,6 +14,7 @@ import MoreDots from './Icons/Icon-Types/moreDots'
 import Star from './Icons/Icon-Types/star'
 import ExitIcon from './Icons/Icon-Types/exitIcon'
 import HomeIcon from './Icons/Icon-Types/homeIcon'
+import AddIcon from './Icons/Icon-Types/addIcon'
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -36,5 +37,6 @@ export {
   MoreDots,
   Star,
   ExitIcon,
-  HomeIcon
+  HomeIcon,
+  AddIcon
 }

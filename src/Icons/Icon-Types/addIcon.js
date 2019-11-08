@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Styles = styled.div`
-  transform: scale(0.8) translateY(2px);
+  transform: scale(0.6);
 `
-const HomeIcon = ({ color }) => {
-  HomeIcon.propTypes = {
+const AddIcon = ({ color }) => {
+  AddIcon.propTypes = {
     color: PropTypes.string
   }
   return (
@@ -15,18 +15,17 @@ const HomeIcon = ({ color }) => {
         id='Layer_1'
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 40 33.96'
+        viewBox='0 0 31 31.69'
         tabIndex='-1'
       >
-        <title>homeIcon</title>
+        <title>addIcon</title>
         <polygon
-          stroke={color}
-          className='cls-1'
-          points='20 1.61 1.73 16.21 2.02 16.61 7.77 12.01 7.77 32.15 32.22 32.15 32.22 12.01 37.97 16.61 38.27 16.21 20 1.61'
+          fill={color}
+          points='16.01 15.35 16.01 0.65 15.41 0.65 15.41 15.35 0.71 15.35 0.71 15.95 15.41 15.95 15.41 30.65 16.01 30.65 16.01 15.95 30.71 15.95 30.71 15.35 16.01 15.35'
         />
       </svg>
     </Styles>
   )
 }
 
-export default HomeIcon
+export default AddIcon
