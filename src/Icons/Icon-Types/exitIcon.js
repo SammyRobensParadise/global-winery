@@ -1,31 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+const Styles = styled.div`
+  transform: scale(0.6) translateY(-1px);
+`
 const ExitIcon = ({ color }) => {
   ExitIcon.propTypes = {
     color: PropTypes.string
   }
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='34'
-      height='48'
-      viewBox='0 0 22 41'
-      tabIndex='1'
-    >
-      <text
-        id='x001_-_E0A9'
-        data-name='x001 - E0A9'
-        transform='translate(11 40)'
-        fill={color}
-        fontSize='20'
-        fontFamily='IkonoMiniL-2, Ikono Mini L'
+    <Styles>
+      <svg
+        id='Layer_1'
+        data-name='Layer 1'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 22 23.2'
+        tabIndex='-1'
       >
-        <tspan x='-10.23' y='0'>
-          
-        </tspan>
-      </text>
-    </svg>
+        <title>exitIcon</title>
+        <polygon
+          fill={color}
+          points='21.23 2 20.77 1.56 11.01 11.32 1.23 1.56 0.77 2 10.55 11.78 0.77 21.56 1.23 22 11.01 12.22 20.77 22 21.23 21.56 11.45 11.78 21.23 2'
+        />
+      </svg>
+    </Styles>
   )
 }
 

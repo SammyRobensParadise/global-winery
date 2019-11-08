@@ -1,32 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import styled from 'styled-components'
+const Styles = styled.div`
+  padding-top: 4px;
+  transform: scale(0.8);
+`
 const BackArrow = ({ color }) => {
   BackArrow.propTypes = {
     color: PropTypes.string
   }
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      tabIndex='1'
-      width='34'
-      height='48'
-      viewBox='0 0 34 57'
-    >
-      <text
-        id='right004_-_E04C'
-        data-name='right004 - E04C'
-        transform='matrix(-1, 0, 0, 1, 17, 55)'
-        stroke={color}
-        strokeWidth='1'
-        fontSize='27'
-        fontFamily='IkonoMiniL-1, Ikono Mini L'
+    <Styles>
+      <svg
+        id='Layer_1'
+        data-name='Layer 1'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 34 28.31'
+        tabIndex='-1'
       >
-        <tspan x='-15.039' y='0'>
-          
-        </tspan>
-      </text>
-    </svg>
+        <title>backArrow</title>
+        <polygon
+          className='cls-1'
+          fill={color}
+          stroke={color}
+          points='32.04 13.59 3 13.59 14.3 2.63 13.93 2.25 1.97 13.85 13.93 25.46 14.3 25.08 3 14.13 32.04 14.13 32.04 13.59'
+        />
+      </svg>
+    </Styles>
   )
 }
 
