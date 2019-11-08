@@ -1,6 +1,6 @@
 {
   "name": "global-winery",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "global-winery for grape, a global frontend",
   "author": "SammyRobensParadise",
   "license": "MIT",
@@ -19,7 +19,8 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "publish-all": "npm install && npm run build && npm publish && cd example && npm install && npm run deploy"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",

@@ -98,6 +98,7 @@ const App = () => (
         Simple design components that, used together, build beauiful user
         interfaces, built in React.js for Grape.
       </Subsection>
+      <Subsection>This Library is in progress!</Subsection>
       <Subsection>
         Created with ❤️ by{' '}
         <a href='https://sammyrp.com'>Sammy Robens-Paradise</a> for Grape.
