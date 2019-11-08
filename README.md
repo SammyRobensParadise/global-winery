@@ -13,6 +13,9 @@
 
 [sammyrp.com/global-winery](https://sammyrp.com/global-winery)
 
+## Warning
+<b>This Library is currently incomplete and is in the process of being built</b>
+
 ## Install
 
 ```bash
