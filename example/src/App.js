@@ -311,7 +311,7 @@ const IconSection = () => {
   const typeSix = <MoreDots color={'#000000'} />
   const typeSeven = <Star color={'#000000'} />
   const typeEight = <ExitIcon color={'#000000'} />
-  const typeNine  = <HomeIcon color={'#000000'} />
+  const typeNine = <HomeIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
