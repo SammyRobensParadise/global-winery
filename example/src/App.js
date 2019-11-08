@@ -16,7 +16,8 @@ import {
   MoreDots,
   Star,
   ExitIcon,
-  HomeIcon
+  HomeIcon,
+  AddIcon
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -97,6 +98,7 @@ const App = () => (
         Simple design components that, used together, build beauiful user
         interfaces, built in React.js for Grape.
       </Subsection>
+      <Subsection>This Library is in progress!</Subsection>
       <Subsection>
         Created with ❤️ by{' '}
         <a href='https://sammyrp.com'>Sammy Robens-Paradise</a> for Grape.
@@ -312,6 +314,7 @@ const IconSection = () => {
   const typeSeven = <Star color={'#000000'} />
   const typeEight = <ExitIcon color={'#000000'} />
   const typeNine = <HomeIcon color={'#000000'} />
+  const typeTen = <AddIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
@@ -366,6 +369,10 @@ const IconSection = () => {
       <Content>
         <Code>HomeIcon</Code>
         <Icon type={typeNine} event={() => alert('home icon clicked!')}></Icon>
+      </Content>
+      <Content>
+        <Code>AddIcon</Code>
+        <Icon type={typeTen} event={() => alert('add icon clicked!')}></Icon>
       </Content>
     </Container>
   )
