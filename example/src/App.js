@@ -18,7 +18,8 @@ import {
   ExitIcon,
   HomeIcon,
   AddIcon,
-  ProfileBadgeIcon
+  ProfileBadgeIcon,
+  InfoIcon
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -317,6 +318,7 @@ const IconSection = () => {
   const typeNine = <HomeIcon color={'#000000'} />
   const typeTen = <AddIcon color={'#000000'} />
   const typeEleven = <ProfileBadgeIcon color={'#000000'} />
+  const typeTwelve = <InfoIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
@@ -381,6 +383,13 @@ const IconSection = () => {
         <Icon
           type={typeEleven}
           event={() => alert('profile badge clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>InfoIcon</Code>
+        <Icon
+          type={typeTwelve}
+          event={() => alert('info icon clicked!')}
         ></Icon>
       </Content>
     </Container>

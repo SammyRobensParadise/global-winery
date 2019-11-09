@@ -16,6 +16,7 @@ import ExitIcon from './Icons/Icon-Types/exitIcon'
 import HomeIcon from './Icons/Icon-Types/homeIcon'
 import AddIcon from './Icons/Icon-Types/addIcon'
 import ProfileBadgeIcon from './Icons/Icon-Types/profileBadgeIcon'
+import InfoIcon from './Icons/Icon-Types/infoIcon'
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -40,5 +41,6 @@ export {
   ExitIcon,
   HomeIcon,
   AddIcon,
-  ProfileBadgeIcon
+  ProfileBadgeIcon,
+  InfoIcon
 }
