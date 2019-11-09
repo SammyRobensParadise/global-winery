@@ -17,6 +17,10 @@ import HomeIcon from './Icons/Icon-Types/homeIcon'
 import AddIcon from './Icons/Icon-Types/addIcon'
 import ProfileBadgeIcon from './Icons/Icon-Types/profileBadgeIcon'
 import InfoIcon from './Icons/Icon-Types/infoIcon'
+import FullScreenIcon from './Icons/Icon-Types/fullScreenIcon'
+import DownloadIcon from './Icons/Icon-Types/downloadIcon'
+import ForkIcon from './Icons/Icon-Types/forkIcon'
+import DataIcon from './Icons/Icon-Types/dataIcon'
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -42,5 +46,9 @@ export {
   HomeIcon,
   AddIcon,
   ProfileBadgeIcon,
-  InfoIcon
+  InfoIcon,
+  FullScreenIcon,
+  DownloadIcon,
+  ForkIcon,
+  DataIcon
 }
