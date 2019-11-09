@@ -19,7 +19,11 @@ import {
   HomeIcon,
   AddIcon,
   ProfileBadgeIcon,
-  InfoIcon
+  InfoIcon,
+  FullScreenIcon,
+  DownloadIcon,
+  ForkIcon,
+  DataIcon
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -307,7 +311,7 @@ const CheckBoxesSection = () => {
 }
 
 const IconSection = () => {
-  const type = <CodeBlock color={'#fff'} />
+  const type = <CodeBlock color={'#00000'} />
   const typeTwo = <RefreshArrow color={'#00000'} />
   const typeThree = <BackArrow color={'#00000'} />
   const typeFour = <ForwardArrow color={'#00000'} />
@@ -319,6 +323,10 @@ const IconSection = () => {
   const typeTen = <AddIcon color={'#000000'} />
   const typeEleven = <ProfileBadgeIcon color={'#000000'} />
   const typeTwelve = <InfoIcon color={'#000000'} />
+  const typeThirteen = <FullScreenIcon color={'#000000'} />
+  const typeFourteen = <DownloadIcon color={'#000000'} />
+  const typeFifteen = <ForkIcon color={'#000000'} />
+  const typeSixteen = <DataIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
@@ -329,8 +337,6 @@ const IconSection = () => {
         <Icon
           type={type}
           event={() => alert('codeblock clicked!')}
-          color={'#cacaca'}
-          circle
         ></Icon>
       </Content>
       <Content>
@@ -390,6 +396,34 @@ const IconSection = () => {
         <Icon
           type={typeTwelve}
           event={() => alert('info icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>FullScreenIcon</Code>
+        <Icon
+          type={typeThirteen}
+          event={() => alert('full screen icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>DownloadIcon</Code>
+        <Icon
+          type={typeFourteen}
+          event={() => alert('download icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>ForkIcon</Code>
+        <Icon
+          type={typeFifteen}
+          event={() => alert('fork icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>DataIcon</Code>
+        <Icon
+          type={typeSixteen}
+          event={() => alert('data icon clicked!')}
         ></Icon>
       </Content>
     </Container>
