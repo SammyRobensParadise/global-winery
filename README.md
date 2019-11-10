@@ -14,6 +14,7 @@
 [sammyrp.com/global-winery](https://sammyrp.com/global-winery)
 
 ## Warning
+
 <b>This Library is currently incomplete and is in the process of being built</b>
 
 ## Install
@@ -145,6 +146,8 @@ SingleInput.propTypes = {
 
 # Icons
 
+[See all icons](https://sammyrp.com/global-winery/#icons)
+
 ## General Icons
 
 ```jsx
@@ -154,11 +157,12 @@ Icon.propTypes = {
   circle: PropTypes.bool,
   square: PropTypes.bool,
   color: PropTypes.string,
-  event: PropTypes.func
+  event: PropTypes.func,
+  children: PropTypes.component
 }
 ```
 
-## Code Block
+## Icon Child
 
 ```jsx
 CodeBlock.propTypes = {
@@ -166,71 +170,50 @@ CodeBlock.propTypes = {
 }
 ```
 
-## Refresh Arrow
+## Usage
 
 ```jsx
-RefreshArrow.propTypes = {
-  color: PropTypes.string
+.
+.
+.
+render(){
+  const children = <CodeBlock color={'#000000'} />
+  return(
+    <Icon
+      type={children}
+      event={()  => alert('🚨 watch out!')}
+      circle
+      color={'#adadad'}
+    />
+  )
 }
 ```
 
-## Back Arrow
+## Icon List
 
-```jsx
-  BackArrow.propTypes = {
-    color: PropTypes.string
-```
-
-## Forward Arrow
-
-```jsx
-ForwardArrow.propTypes = {
-  color: PropTypes.string
-}
-```
-
-## Export and Share
-
-```jsx
-exportUp.propTypes = {
-  color: PropTypes.string
-}
-```
-## More Dots
-
-```jsx
-MoreDots.propTypes = {
-  color: PropTypes.string
-}
-```
-## Star
-
-```jsx
-Star.propTypes = {
-  color: PropTypes.string
-}
-```
-## Exit Icon
-
-```jsx
-ExitIcon.propTypes = {
-  color: PropTypes.string
-}
-```
-## Home Icon
-
-```jsx
-HomeIcon.propTypes = {
-  color: PropTypes.string
-}
-```
-## Add Icon
-
-```jsx
-AddIcon.propTypes = {
-  color: PropTypes.string
-}
-```
+1. Code Block
+2. Refresh Arrow
+3. Back Arrow
+4. Forward Arrow
+5. Export and Share
+6. More Dots
+7. Star
+8. Exit Icon
+9. Home Icon
+10. Add Icon
+11. Profile Badge Icon
+12. InfoIcon
+13. FullScreenIcon
+14. DownloadIcon
+15. ForkIcon
+16. DataIcon
+17. CodeEditorIcon
+18. FileIcon
+19. CodepenIcon
+20. TextboxIcon
+21. ConsoleIcon
+22. PhotovideoIcon
+23. DiagramIcon
 
 # More To Come... :)
 

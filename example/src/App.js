@@ -102,13 +102,18 @@ const OuterListEl = styled.ul`
 const ListI = styled.li`
   margin-top: 10px;
 `
+const ShieldLists = styled.a`
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+`
 const App = () => (
   <Wrapper>
     <Jumbotron>
-      <Title>global-winery | design</Title>
+      <Title>global-winery | 🍷 design</Title>
 
       <Subsection>
-        Simple design components that, used together, build beauiful user
+        Simple design components that, used together, create beauiful user
         interfaces, built in React.js for Grape.
       </Subsection>
       <Subsection>This Library is in progress!</Subsection>
@@ -118,6 +123,18 @@ const App = () => (
       </Subsection>
       <Subsection>
         Check out <a href='https://grape-promo.firebaseapp.com/'>Grape</a> 🍇
+      </Subsection>
+      <Subsection>
+        <ShieldLists href='https://www.npmjs.com/package/global-winery'>
+          {' '}
+          <img src='https://img.shields.io/npm/v/global-winery'></img>
+        </ShieldLists>
+      </Subsection>
+      <Subsection>
+        <ShieldLists href='https://github.com/SammyRobensParadise/global-winery'>
+          {' '}
+          <img src='https://img.shields.io/github/status/s/pulls/SammyRobensParadise/global-winery/1?label=github%20checks'></img>
+        </ShieldLists>
       </Subsection>
     </Jumbotron>
     <SectionGradient />
@@ -340,7 +357,7 @@ const IconSection = () => {
   const typeTwenty = <TextboxIcon color={'#000000'} />
   const typeTwentyOne = <ConsoleIcon color={'#000000'} />
   const typeTwentyTwo = <PhotovideoIcon color={'#000000'} />
-  const typeTwentyThree  = <DiagramIcon color={'#000000'} />
+  const typeTwentyThree = <DiagramIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
