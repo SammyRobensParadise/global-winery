@@ -23,7 +23,14 @@ import {
   FullScreenIcon,
   DownloadIcon,
   ForkIcon,
-  DataIcon
+  DataIcon,
+  CodeEditorIcon,
+  FileIcon,
+  CodepenIcon,
+  TextboxIcon,
+  ConsoleIcon,
+  PhotovideoIcon,
+  DiagramIcon
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -95,13 +102,18 @@ const OuterListEl = styled.ul`
 const ListI = styled.li`
   margin-top: 10px;
 `
+const ShieldLists = styled.a`
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+`
 const App = () => (
   <Wrapper>
     <Jumbotron>
-      <Title>global-winery | design</Title>
+      <Title>global-winery | 🍷 design</Title>
 
       <Subsection>
-        Simple design components that, used together, build beauiful user
+        Simple design components that, used together, create beauiful user
         interfaces, built in React.js for Grape.
       </Subsection>
       <Subsection>This Library is in progress!</Subsection>
@@ -111,6 +123,18 @@ const App = () => (
       </Subsection>
       <Subsection>
         Check out <a href='https://grape-promo.firebaseapp.com/'>Grape</a> 🍇
+      </Subsection>
+      <Subsection>
+        <ShieldLists href='https://www.npmjs.com/package/global-winery'>
+          {' '}
+          <img src='https://img.shields.io/npm/v/global-winery'></img>
+        </ShieldLists>
+      </Subsection>
+      <Subsection>
+        <ShieldLists href='https://github.com/SammyRobensParadise/global-winery'>
+          {' '}
+          <img src='https://img.shields.io/github/status/s/pulls/SammyRobensParadise/global-winery/1?label=github%20checks'></img>
+        </ShieldLists>
       </Subsection>
     </Jumbotron>
     <SectionGradient />
@@ -327,6 +351,13 @@ const IconSection = () => {
   const typeFourteen = <DownloadIcon color={'#000000'} />
   const typeFifteen = <ForkIcon color={'#000000'} />
   const typeSixteen = <DataIcon color={'#000000'} />
+  const typeSeventeen = <CodeEditorIcon color={'#000000'} />
+  const typeEighteen = <FileIcon color={'#000000'} />
+  const typeNineteen = <CodepenIcon color={'#000000'} />
+  const typeTwenty = <TextboxIcon color={'#000000'} />
+  const typeTwentyOne = <ConsoleIcon color={'#000000'} />
+  const typeTwentyTwo = <PhotovideoIcon color={'#000000'} />
+  const typeTwentyThree = <DiagramIcon color={'#000000'} />
   return (
     <Container>
       <Jumbotron>
@@ -334,10 +365,7 @@ const IconSection = () => {
       </Jumbotron>
       <Content>
         <Code>CodeBlock</Code>
-        <Icon
-          type={type}
-          event={() => alert('codeblock clicked!')}
-        ></Icon>
+        <Icon type={type} event={() => alert('codeblock clicked!')}></Icon>
       </Content>
       <Content>
         <Code>RefreshArrow</Code>
@@ -424,6 +452,55 @@ const IconSection = () => {
         <Icon
           type={typeSixteen}
           event={() => alert('data icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>CodeEditorIcon</Code>
+        <Icon
+          type={typeSeventeen}
+          event={() => alert('code editor icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>FileIcon</Code>
+        <Icon
+          type={typeEighteen}
+          event={() => alert('file icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>CodepenIcon</Code>
+        <Icon
+          type={typeNineteen}
+          event={() => alert('codepen icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>TextboxIcon</Code>
+        <Icon
+          type={typeTwenty}
+          event={() => alert('textbox icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>ConsoleIcon</Code>
+        <Icon
+          type={typeTwentyOne}
+          event={() => alert('console icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>PhotovideoIcon</Code>
+        <Icon
+          type={typeTwentyTwo}
+          event={() => alert('photovideo icon clicked!')}
+        ></Icon>
+      </Content>
+      <Content>
+        <Code>DiagramIcon</Code>
+        <Icon
+          type={typeTwentyThree}
+          event={() => alert('diagram icon clicked!')}
         ></Icon>
       </Content>
     </Container>

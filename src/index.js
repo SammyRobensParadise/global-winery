@@ -21,6 +21,13 @@ import FullScreenIcon from './Icons/Icon-Types/fullScreenIcon'
 import DownloadIcon from './Icons/Icon-Types/downloadIcon'
 import ForkIcon from './Icons/Icon-Types/forkIcon'
 import DataIcon from './Icons/Icon-Types/dataIcon'
+import CodeEditorIcon from './Icons/Icon-Types/codeEditorIcon'
+import FileIcon from './Icons/Icon-Types/fileIcon'
+import CodepenIcon from './Icons/Icon-Types/codepenIcon'
+import TextboxIcon from './Icons/Icon-Types/textboxIcon'
+import ConsoleIcon from './Icons/Icon-Types/consoleIcon'
+import PhotovideoIcon from './Icons/Icon-Types/photovideoIcon'
+import DiagramIcon from './Icons/Icon-Types/diagramIcon'
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -50,5 +57,12 @@ export {
   FullScreenIcon,
   DownloadIcon,
   ForkIcon,
-  DataIcon
+  DataIcon,
+  CodeEditorIcon,
+  FileIcon,
+  CodepenIcon,
+  TextboxIcon,
+  ConsoleIcon,
+  PhotovideoIcon,
+  DiagramIcon
 }
