@@ -1,7 +1,22 @@
 {
   "name": "global-winery",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "global-winery for grape, a global frontend",
+  "keywords": [
+    "react.js",
+    "react",
+    "front-end",
+    "grape",
+    "minial",
+    "green",
+    "component",
+    "library",
+    "global-winery",
+    "wine",
+    "branded",
+    "open-source",
+    "MIT"
+  ],
   "author": "SammyRobensParadise",
   "license": "MIT",
   "repository": "SammyRobensParadise/global-winery",
