@@ -30,7 +30,20 @@ import {
   TextboxIcon,
   ConsoleIcon,
   PhotovideoIcon,
-  DiagramIcon
+  DiagramIcon,
+  GrapeGreen,
+  GrapePurple,
+  GrapeLightGreyText,
+  GrapePlaceholderGrey,
+  GrapeBackgroundTab,
+  GrapeWhite,
+  GrapeBlack,
+  GrapeGreyButton,
+  GrapeConsole,
+  GrapeIDE,
+  GrapeRed,
+  GrapePurpleGradient,
+  GrapeGreenPurpleGradient
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -107,6 +120,12 @@ const ShieldLists = styled.a`
   display: inline-block;
   margin-top: 30px;
 `
+const ColorBlock = styled.div`
+  width: 100px;
+  height: 100px;
+  background: ${p => p.color};
+  border-radius: 10px 10px 10px 10px;
+`
 const App = () => (
   <Wrapper>
     <Jumbotron>
@@ -148,6 +167,8 @@ const App = () => (
     <SectionGradient />
     <IconSection />
     <SectionGradient />
+    <ColorSection />
+    <SectionGradient />
   </Wrapper>
 )
 
@@ -169,6 +190,9 @@ const TableOfContents = () => {
           </ListI>
           <ListI>
             <a href='#icons'>Icons</a>
+          </ListI>
+          <ListI>
+            <a href='#colors'>Colors</a>
           </ListI>
         </OuterListEl>
       </Table>
@@ -502,6 +526,67 @@ const IconSection = () => {
           type={typeTwentyThree}
           event={() => alert('diagram icon clicked!')}
         ></Icon>
+      </Content>
+    </Container>
+  )
+}
+const ColorSection = () => {
+  return (
+    <Container>
+      <Jumbotron>
+        <SectionTitle id='colors'>Grape Colors</SectionTitle>
+      </Jumbotron>
+      <Content>
+        <Code>GrapeGreen</Code>
+        <ColorBlock color={GrapeGreen} />
+      </Content>
+      <Content>
+        <Code>GrapePurple</Code>
+        <ColorBlock color={GrapePurple} />
+      </Content>
+      <Content>
+        <Code>GrapeLightGreyText</Code>
+        <ColorBlock color={GrapeLightGreyText} />
+      </Content>
+      <Content>
+        <Code>GrapePlaceholderGrey</Code>
+        <ColorBlock color={GrapePlaceholderGrey} />
+      </Content>
+      <Content>
+        <Code>GrapeBackgroundTab</Code>
+        <ColorBlock color={GrapeBackgroundTab} />
+      </Content>
+      <Content>
+        <Code>GrapeWhite</Code>
+        <ColorBlock color={GrapeWhite} />
+      </Content>
+      <Content>
+        <Code>GrapeBlack</Code>
+        <ColorBlock color={GrapeBlack} />
+      </Content>
+      <Content>
+        <Code>GrapeGreyButton</Code>
+        <ColorBlock color={GrapeGreyButton} />
+      </Content>
+      <Content>
+        <Code>GrapeConsole</Code>
+        <ColorBlock color={GrapeConsole} />
+      </Content>
+      <Content>
+        <Code>GrapeIDE</Code>
+        <ColorBlock color={GrapeIDE} />
+      </Content>
+      <Content>
+        <Code>GrapeRed</Code>
+        <ColorBlock color={GrapeRed} />
+      </Content>
+      <Content>
+        <Code>GrapePurpleGradient</Code>
+        <ColorBlock color={GrapePurpleGradient} />
+      </Content>
+      <Content>
+        <Code>GrapeGreenPurpleGradient</Code>
+        <ColorBlock color={GrapeGreenPurpleGradient} />
       </Content>
     </Container>
   )

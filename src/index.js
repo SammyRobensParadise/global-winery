@@ -1,9 +1,12 @@
+// Buttons
 import Button from './global-buttons/buttons/Button'
 import MultiButton from './global-buttons/buttons/MultiButton'
 import Chevron from './global-buttons/chevrons/Chevron'
+// Inputs
 import SingleInput from './global-text-inputs/text-inputs/SingleInput'
 import FixedInput from './global-text-inputs/text-inputs/FixedInput'
 import CheckBox from './checkboxes/Checkbox'
+// Icons
 import Icon from './Icons/Icons'
 import CodeBlock from './Icons/Icon-Types/codeBlock.js'
 import RefreshArrow from './Icons/Icon-Types/refreshArrow'
@@ -28,9 +31,27 @@ import TextboxIcon from './Icons/Icon-Types/textboxIcon'
 import ConsoleIcon from './Icons/Icon-Types/consoleIcon'
 import PhotovideoIcon from './Icons/Icon-Types/photovideoIcon'
 import DiagramIcon from './Icons/Icon-Types/diagramIcon'
+// Colors
+import {
+  GrapeGreen,
+  GrapePurple,
+  GrapeLightGreyText,
+  GrapePlaceholderGrey,
+  GrapeBackgroundTab,
+  GrapeWhite,
+  GrapeBlack,
+  GrapeGreyButton,
+  GrapeConsole,
+  GrapeIDE,
+  GrapeRed,
+  GrapePurpleGradient,
+  GrapeGreenPurpleGradient
+} from './colors/global-colors'
+// Dependencies
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+// exports
 export {
   Button,
   MultiButton,
@@ -64,5 +85,18 @@ export {
   TextboxIcon,
   ConsoleIcon,
   PhotovideoIcon,
-  DiagramIcon
+  DiagramIcon,
+  GrapeGreen,
+  GrapePurple,
+  GrapeLightGreyText,
+  GrapePlaceholderGrey,
+  GrapeBackgroundTab,
+  GrapeWhite,
+  GrapeBlack,
+  GrapeGreyButton,
+  GrapeConsole,
+  GrapeIDE,
+  GrapeRed,
+  GrapePurpleGradient,
+  GrapeGreenPurpleGradient
 }
