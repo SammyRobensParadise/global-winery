@@ -43,7 +43,8 @@ import {
   GrapeIDE,
   GrapeRed,
   GrapePurpleGradient,
-  GrapeGreenPurpleGradient
+  GrapeGreenPurpleGradient,
+  Dropdown
 } from 'global-winery'
 import { Container, Jumbotron } from 'reactstrap'
 
@@ -138,21 +139,21 @@ const App = () => (
       <Subsection>This Library is in progress!</Subsection>
       <Subsection>
         Created with ❤️ by{' '}
-        <a href='https://sammyrp.com'>Sammy Robens-Paradise</a> for Grape.
+        <a href="https://sammyrp.com">Sammy Robens-Paradise</a> for Grape.
       </Subsection>
       <Subsection>
-        Check out <a href='https://grape-promo.firebaseapp.com/'>Grape</a> 🍇
+        Check out <a href="https://grape-promo.firebaseapp.com/">Grape</a> 🍇
       </Subsection>
       <Subsection>
-        <ShieldLists href='https://www.npmjs.com/package/global-winery'>
+        <ShieldLists href="https://www.npmjs.com/package/global-winery">
           {' '}
-          <img src='https://img.shields.io/npm/v/global-winery'></img>
+          <img src="https://img.shields.io/npm/v/global-winery"></img>
         </ShieldLists>
       </Subsection>
       <Subsection>
-        <ShieldLists href='https://github.com/SammyRobensParadise/global-winery'>
+        <ShieldLists href="https://github.com/SammyRobensParadise/global-winery">
           {' '}
-          <img src='https://img.shields.io/github/status/s/pulls/SammyRobensParadise/global-winery/1?label=github%20checks'></img>
+          <img src="https://img.shields.io/github/status/s/pulls/SammyRobensParadise/global-winery/1?label=github%20checks"></img>
         </ShieldLists>
       </Subsection>
     </Jumbotron>
@@ -169,6 +170,8 @@ const App = () => (
     <SectionGradient />
     <ColorSection />
     <SectionGradient />
+    <DropdownSection />
+    <SectionGradient />
   </Wrapper>
 )
 
@@ -179,20 +182,23 @@ const TableOfContents = () => {
         <SectionTitle>Table of Contents</SectionTitle>
         <OuterListEl>
           <ListI>
-            <a href='#buttons_and_toggles'>Buttons and Toggles</a>
+            <a href="#buttons_and_toggles">Buttons and Toggles</a>
           </ListI>
           <ListI>
             {' '}
-            <a href='#inputs_and_text_fields'>Inputs and Text Fields</a>
+            <a href="#inputs_and_text_fields">Inputs and Text Fields</a>
           </ListI>
           <ListI>
-            <a href='#check_boxes'>Check Boxes</a>
+            <a href="#check_boxes">Check Boxes</a>
           </ListI>
           <ListI>
-            <a href='#icons'>Icons</a>
+            <a href="#icons">Icons</a>
           </ListI>
           <ListI>
-            <a href='#colors'>Colors</a>
+            <a href="#colors">Colors</a>
+          </ListI>
+          <ListI>
+            <a href="#dropdown">Dropdown</a>
           </ListI>
         </OuterListEl>
       </Table>
@@ -206,7 +212,7 @@ const ButtonsSection = () => {
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle id='buttons_and_toggles'>
+        <SectionTitle id="buttons_and_toggles">
           Buttons and Toggles
         </SectionTitle>
       </Jumbotron>
@@ -214,7 +220,7 @@ const ButtonsSection = () => {
         <Content>
           <Code>Button Props: text,small,event</Code>
           <Button
-            text='Sign Up'
+            text="Sign Up"
             small={true}
             event={() => alert('Button Clicked!')}
             hover={true}
@@ -223,7 +229,7 @@ const ButtonsSection = () => {
         <Content>
           <Code>Button Props: text,small,event,dropShadow</Code>
           <Button
-            text='Sign Up'
+            text="Sign Up"
             small={true}
             event={() => alert('Button Clicked!')}
             dropShadow={true}
@@ -233,7 +239,7 @@ const ButtonsSection = () => {
         <Content>
           <Code>Button Props: text,small,event,hover,invert</Code>
           <Button
-            text='Sign Up'
+            text="Sign Up"
             small={true}
             invert={true}
             hover={true}
@@ -243,7 +249,7 @@ const ButtonsSection = () => {
         <Content>
           <Code>Button Props: text,small,event,dropShadow,hover,invert</Code>
           <Button
-            text='Sign Up'
+            text="Sign Up"
             small={true}
             invert={true}
             hover={true}
@@ -258,8 +264,8 @@ const ButtonsSection = () => {
             textLeft,textRight,leftFocus,RightFocus,leftEvent,RightEvent
           </Code>
           <MultiButton
-            textLeft='Left Buttton'
-            textRight='Right Button'
+            textLeft="Left Buttton"
+            textRight="Right Button"
             leftFocus={count % 2 === 0 ? true : false}
             rightFocus={count % 2 === 0 ? false : true}
             leftEvent={() => setCount(count + 1)}
@@ -274,8 +280,8 @@ const ButtonsSection = () => {
             textLeft,textRight,leftFocus,RightFocus,leftEvent,RightEvent,dropShadow
           </Code>
           <MultiButton
-            textLeft='Left Buttton'
-            textRight='Right Button'
+            textLeft="Left Buttton"
+            textRight="Right Button"
             leftFocus={countTwo % 2 === 0 ? false : true}
             rightFocus={countTwo % 2 === 0 ? true : false}
             leftEvent={() => setCountTwo(countTwo + 1)}
@@ -286,19 +292,19 @@ const ButtonsSection = () => {
         <br></br>
         <Content>
           <Code> Chevron Props: direction, color</Code>
-          <Chevron direction='RIGHT' color='#2EBF91'></Chevron>
+          <Chevron direction="RIGHT" color="#2EBF91"></Chevron>
         </Content>
         <Content>
           <Code> Chevron Props: direction, color</Code>
-          <Chevron direction='LEFT' color='#361E5C'></Chevron>
+          <Chevron direction="LEFT" color="#361E5C"></Chevron>
         </Content>
         <Content>
           <Code> Chevron Props: direction, color</Code>
-          <Chevron direction='UP' color='#361E5C'></Chevron>
+          <Chevron direction="UP" color="#361E5C"></Chevron>
         </Content>
         <Content>
           <Code> Chevron Props: direction, color</Code>
-          <Chevron direction='DOWN' color='#2EBF91'></Chevron>
+          <Chevron direction="DOWN" color="#2EBF91"></Chevron>
         </Content>
       </Container>
     </Container>
@@ -308,7 +314,7 @@ const ButtonsSection = () => {
 const InputSection = () => (
   <Container>
     <Jumbotron>
-      <SectionTitle id='inputs_and_text_fields'>
+      <SectionTitle id="inputs_and_text_fields">
         Inputs and Text Fields
       </SectionTitle>
     </Jumbotron>
@@ -316,17 +322,17 @@ const InputSection = () => (
       <Code>
         Text Input Resizable and Scrollable Props: type,size,scrollAndResize
       </Code>
-      <SingleInput type='text' size='30' scrollAndResize={true}></SingleInput>
+      <SingleInput type="text" size="30" scrollAndResize={true}></SingleInput>
     </Content>
     <br></br>
     <Content>
       <Code>Text Input Resizable Default Props: type,size,scrollAndResize</Code>
-      <SingleInput type='text' size='30' scrollAndResize={false}></SingleInput>
+      <SingleInput type="text" size="30" scrollAndResize={false}></SingleInput>
     </Content>
     <br></br>
     <Content>
       <Code>Text Input Resizable Default Props: type,size,width,height</Code>
-      <FixedInput type='text' size='30' width={800} height={300}></FixedInput>
+      <FixedInput type="text" size="30" width={800} height={300}></FixedInput>
     </Content>
   </Container>
 )
@@ -336,7 +342,7 @@ const CheckBoxesSection = () => {
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle id='check_boxes'>Check Boxes</SectionTitle>
+        <SectionTitle id="check_boxes">Check Boxes</SectionTitle>
       </Jumbotron>
       <Content>
         <Code>CheckBox props: Checked, borderColor </Code>
@@ -385,7 +391,7 @@ const IconSection = () => {
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle id='icons'>Icons</SectionTitle>
+        <SectionTitle id="icons">Icons</SectionTitle>
       </Jumbotron>
       <Content>
         <Code>CodeBlock</Code>
@@ -534,7 +540,7 @@ const ColorSection = () => {
   return (
     <Container>
       <Jumbotron>
-        <SectionTitle id='colors'>Grape Colors</SectionTitle>
+        <SectionTitle id="colors">Grape Colors</SectionTitle>
       </Jumbotron>
       <Content>
         <Code>GrapeGreen</Code>
@@ -587,6 +593,50 @@ const ColorSection = () => {
       <Content>
         <Code>GrapeGreenPurpleGradient</Code>
         <ColorBlock color={GrapeGreenPurpleGradient} />
+      </Content>
+    </Container>
+  )
+}
+const DropdownSection = () => {
+  const typeTen = <AddIcon color={'#000000'} />
+  const typeTenDD = <AddIcon color={'#fff'} />
+  const typeEighteen = <FileIcon color={'#fff'} />
+  const typeNineteen = <CodepenIcon color={'#fff'} />
+  const typeTwenty = <TextboxIcon color={'#fff'} />
+  const DropdownItems = [
+    {
+      text: 'first element',
+      icon: typeTenDD,
+      event: () => alert('hello'),
+      key: 1
+    },
+    {
+      text: 'second element',
+      icon: typeEighteen,
+      event: () => alert('hello'),
+      key: 2
+    },
+    {
+      text: 'third element',
+      icon: typeNineteen,
+      event: () => alert('hello'),
+      key: 3
+    },
+    {
+      text: 'fourth element',
+      icon: typeTwenty,
+      event: () => alert('hello'),
+      key: 4
+    }
+  ]
+  return (
+    <Container>
+      <Jumbotron>
+        <SectionTitle id="dropdown">Dropdown</SectionTitle>
+      </Jumbotron>
+      <Content>
+        <Code>Drowdown</Code>
+        <Dropdown Anchor={typeTen} Children={DropdownItems} />
       </Content>
     </Container>
   )
