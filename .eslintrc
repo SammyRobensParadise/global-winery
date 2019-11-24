@@ -8,7 +8,7 @@
     "es6": true
   },
   "plugins": [
-    "react"
+    "react",
   ],
   "parserOptions": {
     "sourceType": "module"

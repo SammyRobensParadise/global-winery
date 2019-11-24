@@ -31,6 +31,7 @@ import TextboxIcon from './Icons/Icon-Types/textboxIcon'
 import ConsoleIcon from './Icons/Icon-Types/consoleIcon'
 import PhotovideoIcon from './Icons/Icon-Types/photovideoIcon'
 import DiagramIcon from './Icons/Icon-Types/diagramIcon'
+import Dropdown from './dropdowns/dropdown'
 // Colors
 import {
   GrapeGreen,
@@ -98,5 +99,6 @@ export {
   GrapeIDE,
   GrapeRed,
   GrapePurpleGradient,
-  GrapeGreenPurpleGradient
+  GrapeGreenPurpleGradient,
+  Dropdown
 }
