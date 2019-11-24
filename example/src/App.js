@@ -635,7 +635,9 @@ const DropdownSection = () => {
         <SectionTitle id="dropdown">Dropdown</SectionTitle>
       </Jumbotron>
       <Content>
-        <Code>Drowdown</Code>
+        <Code>
+          Drowdown: props: Array(Children) Object: text,icon,event,key, Anchor
+        </Code>
         <Dropdown Anchor={typeTen} Children={DropdownItems} />
       </Content>
     </Container>
