@@ -17,7 +17,7 @@ const RefreshArrow = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='4 5 23 33'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>refreshArrow</title>
         <g id='left094_-_E64C' data-name='left094 - E64C' className='cls-1'>

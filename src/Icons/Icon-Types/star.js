@@ -16,7 +16,7 @@ const Star = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 28 26.74'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>star</title>
         <path

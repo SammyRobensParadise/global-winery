@@ -7,15 +7,24 @@ const CheckedOne = styled.div`
   height: 7px;
   background: #2ebf91;
   transform: rotate(-45deg);
+  &:focus {
+    outline: none;
+  }
 `
 const CheckedTwo = styled.div`
   width: 20px;
   height: 7px;
   background: #2ebf91;
   transform: translateX(-7px) translateY(-0px) rotate(45deg);
+  &:focus {
+    outline: none;
+  }
 `
 const CheckedWrapper = styled.div`
   transform: translateX(8px) translateY(4px);
+  &:focus {
+    outline: none;
+  }
 `
 const Box = styled.div`
   width: 30px;
@@ -24,6 +33,9 @@ const Box = styled.div`
   &:hover {
     cursor: pointer;
     background: #f5f5f5;
+  }
+  &:focus {
+    outline: none;
   }
 `
 const CheckMark = ({ checked }) => {
@@ -49,7 +61,7 @@ const CheckBox = ({ checked, borderColor, event }) => {
   }
   return (
     <div className={CLASSNAME}>
-      <Box borderColor={borderColor} onClick={event} onKeyDown={event} tabIndex='1'>
+      <Box borderColor={borderColor} onClick={event} onKeyDown={event} tabIndex='0'>
         <CheckMark checked={checked} />
       </Box>
     </div>

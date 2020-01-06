@@ -15,6 +15,9 @@ const InputWrapperNotScrollable = styled.textarea`
   font-size: 20px;
   padding-left: 20px;
   white-space: normal;
+  &:focus {
+    outline: none;
+  }
 `
 const GetTextArea = ({ type, size, width, height }) => {
   GetTextArea.propTypes = {

@@ -15,6 +15,9 @@ const ChevWrapperRight = styled.div`
   &:hover {
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
 `
 const ChevWrapperLeft = styled.div`
   width: 0;
@@ -24,6 +27,9 @@ const ChevWrapperLeft = styled.div`
   border-right: 23px solid ${p => p.color};
   &:hover {
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 `
 const ChevWrapperUp = styled.div`
@@ -35,6 +41,9 @@ const ChevWrapperUp = styled.div`
   &:hover {
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
 `
 const ChevWrapperDown = styled.div`
   width: 0;
@@ -45,23 +54,26 @@ const ChevWrapperDown = styled.div`
   &:hover {
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
 `
 const GetStyle = ({ direction, color }) => {
   switch (direction) {
     case up: {
-      return <ChevWrapperUp tabIndex='1' color={color} />
+      return <ChevWrapperUp tabIndex='0' color={color} />
     }
     case down: {
-      return <ChevWrapperDown tabIndex='1' color={color} />
+      return <ChevWrapperDown tabIndex='0' color={color} />
     }
     case left: {
-      return <ChevWrapperLeft tabIndex='1' color={color} />
+      return <ChevWrapperLeft tabIndex='0' color={color} />
     }
     case right: {
-      return <ChevWrapperRight tabIndex='1' color={color} />
+      return <ChevWrapperRight tabIndex='0' color={color} />
     }
     default: {
-      return <ChevWrapperRight tabIndex='1' color={color} />
+      return <ChevWrapperRight tabIndex='0' color={color} />
     }
   }
 }

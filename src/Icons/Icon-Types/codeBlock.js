@@ -17,7 +17,7 @@ const CodeBlock = ({ color }) => {
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 34 38'
         className='outer'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>codeBlock</title>
         <g id='code001_-_E0C5' data-name='code001 - E0C5' className='cls-1'>

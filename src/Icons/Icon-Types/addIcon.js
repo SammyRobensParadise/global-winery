@@ -4,6 +4,9 @@ import styled from 'styled-components'
 
 const Styles = styled.div`
   transform: scale(0.6);
+  &:focus {
+    outline: none;
+  }
 `
 const AddIcon = ({ color }) => {
   AddIcon.propTypes = {
@@ -16,7 +19,7 @@ const AddIcon = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 31 31.69'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>addIcon</title>
         <polygon
