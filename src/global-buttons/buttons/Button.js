@@ -21,16 +21,22 @@ const ButttonEl = styled.div`
     color: ${p =>
     p.hover && p.invert ? '#fff' : p.hover ? '#2ebf91' : '#2ebf91'};
   }
+  &:focus,
+  &:hover {
+    outline: none;
+  }
 `
 
 const ButtonText = styled.div`
-font-family: 'Montserrat', sans-serif;
-font-weight: 200;
-font-size 18px;
-color: inherit;
-height: 58px;
-padding-top: 18px;
-
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: inherit;
+  height: 58px;
+  padding-top: 18px;
+  &:focus {
+    outline: none;
+  }
 `
 
 const BUTTON_CLASSNAME = 'button-wrapper'
@@ -52,7 +58,7 @@ const Button = ({ text, hover, invert, small, dropShadow, event }) => {
         hover={hover}
         invert={invert}
       >
-        <ButtonText tabIndex='1' invert={invert} hover={hover}>
+        <ButtonText tabIndex='0' invert={invert} hover={hover}>
           {text}
         </ButtonText>
       </ButttonEl>

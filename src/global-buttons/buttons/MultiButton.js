@@ -6,6 +6,9 @@ const ButttonEl = styled.div`
   height: 30px;
   box-shadow: ${p =>
     p.dropShadow ? '0px 16px 40px -7px rgba(153,153,153,1)' : 'none'};
+  &:focus {
+    outline: none;
+  }
 `
 const ButtonLeftSide = styled.div`
   width: 200px;
@@ -20,6 +23,9 @@ const ButtonLeftSide = styled.div`
   position: relative;
   &:hover {
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 `
 const ButtonRightSide = styled.div`
@@ -36,20 +42,26 @@ const ButtonRightSide = styled.div`
   &:hover {
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
 `
 const ButtonText = styled.div`
-font-family: 'Montserrat', sans-serif;
-font-weight: 200;
-font-size 16px;
-color: ${p =>
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: ${p =>
     p.left && p.leftFocus
       ? '#fff'
       : p.right && p.rightFocus
         ? '#fff'
         : '#2ebf91'};
-height: 58px;
-padding-top: 7px;
-text-align: center
+  height: 58px;
+  padding-top: 7px;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
 `
 const BUTTON_CLASSNAME = 'multi-button-wrapper'
 const MultiButton = ({
@@ -71,15 +83,25 @@ const MultiButton = ({
     dropShadow: PropTypes.bool
   }
   return (
-    <div className={BUTTON_CLASSNAME} >
+    <div className={BUTTON_CLASSNAME}>
       <ButttonEl dropShadow={dropShadow}>
         <ButtonLeftSide onClick={leftEvent} leftFocus={leftFocus}>
-          <ButtonText tabIndex='1' leftFocus={leftFocus} rightFocus={rightFocus} left>
+          <ButtonText
+            tabIndex='0'
+            leftFocus={leftFocus}
+            rightFocus={rightFocus}
+            left
+          >
             {textLeft}
           </ButtonText>
         </ButtonLeftSide>
         <ButtonRightSide onClick={rightEvent} rightFocus={rightFocus}>
-          <ButtonText tabIndex='1' leftFocus={leftFocus} rightFocus={rightFocus} right>
+          <ButtonText
+            tabIndex='0'
+            leftFocus={leftFocus}
+            rightFocus={rightFocus}
+            right
+          >
             {textRight}
           </ButtonText>
         </ButtonRightSide>

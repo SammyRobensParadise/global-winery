@@ -7,7 +7,6 @@ const DropdownWrapper = styled.div`
   width: 250px;
   height: ${p => p.items * 52}px;
   color: #fff;
-  disply: block;
   background: #909090;
   border-radius: 6px 6px 6px 6px;
   position: absolute;

@@ -16,6 +16,9 @@ const InputWrapperScrollable = styled.textarea`
   padding-left: 20px;
   padding-top: 20px;
   white-space: nowrap;
+  &:focus {
+    outline: none;
+  }
 `
 const InputWrapperNotScrollable = styled.input`
   font-family: 'Montserrat', sans-serif;
@@ -29,6 +32,9 @@ const InputWrapperNotScrollable = styled.input`
   border-color: #d3d3d3;
   font-size: 20px;
   padding-left: 20px;
+  &:focus {
+    outline: none;
+  }
 `
 const GetTextArea = ({ type, size, scrollAndResize }) => {
   GetTextArea.propTypes = {

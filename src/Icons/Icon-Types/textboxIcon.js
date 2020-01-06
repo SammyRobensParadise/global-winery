@@ -12,7 +12,7 @@ const textboxIcon = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 19.16 21.9'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>textboxIcon</title>
         <path

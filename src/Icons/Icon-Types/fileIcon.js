@@ -12,7 +12,7 @@ const FileIcon = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 36.14 34.75'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>fileIcon</title>
         <rect fill={color} x='21.66' y='13.45' width='8.85' height='0.6' />

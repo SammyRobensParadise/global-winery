@@ -12,7 +12,7 @@ const CodeEditorIcon = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 21.52 28.35'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>codeEditorIcon</title>
         <path

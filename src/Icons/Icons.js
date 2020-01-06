@@ -7,6 +7,10 @@ const IconWrapper = styled.div`
   user-select: none;
   line-height: 1;
   width: 38px;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 `
 const IconStyles = styled.div`
   width: 38px;
@@ -18,10 +22,18 @@ const IconStyles = styled.div`
       : p.square
         ? '6px 6px 6px 6px'
         : 'none'};
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 `
 const IconInner = styled.div`
   color: #fff !important;
   line-height: 1;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 `
 const Icon = ({ type, hoverable, circle, square, color, event, className }) => {
   Icon.propTypes = {

@@ -16,7 +16,7 @@ const ForwardArrow = ({ color }) => {
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 34 24.83'
-        tabIndex='-1'
+        tabIndex='0'
       >
         <title>forwardArrow</title>
         <polygon
